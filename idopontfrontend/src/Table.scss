@@ -25,12 +25,18 @@
     padding-block:.3em;
     .Content{
         grid-area: content;
-        padding: .3em;
+        padding-inline: 1.5em;
     }
     .Type{
         grid-area: type;
     }
     .Time{
         grid-area: time;
+    }
+    img{
+        height:1.5em;
+        width:1.5em;
+        position: absolute;
+        margin-left:28.5ch;
     }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Table.scss";
+import cat from "./cat-face.jpg";
+import dog from "./dog-face.svg";
 
 export default class Tables extends React.Component {
   constructor(props) {
@@ -52,6 +54,7 @@ class Appointment extends React.Component {
         <div className="Content">{this.props.appointment.targy}</div>
         <div className="Type">{this.props.appointment.tipus}</div>
         <div className="Time">{this.props.appointment.kezdes}</div>
+        <img src={this.props.appointment.tipus==="erettsegi"?cat:dog} alt="Ikon" />
       </div>
     );
   }
