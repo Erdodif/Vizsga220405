@@ -1,0 +1,36 @@
+.Cards{
+    display: grid;
+    margin:0;
+    @media screen and (max-width: 600px){
+        grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 900px) and (min-width: 600px)  { 
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 900px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.Card{
+    display: grid;
+    margin-inline:auto;
+    margin-block:.5em;
+    grid-template-columns: 12ch 1fr;
+    grid-template-rows: 1fr 1.5em;
+    grid-template-areas: "content content" "time type";
+    width:30ch;
+    border: 2px solid black;
+    border-radius: .5em;
+    padding-inline:1em;
+    padding-block:.3em;
+    .Content{
+        grid-area: content;
+        padding: .3em;
+    }
+    .Type{
+        grid-area: type;
+    }
+    .Time{
+        grid-area: time;
+    }
+}
